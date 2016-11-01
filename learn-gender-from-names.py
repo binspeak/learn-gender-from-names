@@ -27,10 +27,8 @@ use_stored_weights = False
 
 def readin(filename, is_female):
     '''
-    reads in a file with one name per line
-    each entry in the resulting list includes num_chars*2 integers, which stand for ord(<character>)-96
-    the last entry is used as the output and defines if the name is female (1) or male (0)
-    e.g.: the name 'abcdef' would return [1,2,3,4,5,6,1] if is_female is set to 1
+    reads in a file with one name per line and transforms it to a set of data which can be used for further processing
+    :returns a list which looks like this: [[[1,2,3,4,5,6],1], [[1,2,3,4,5,6],0]....]
     '''
     with io.open(filename, encoding='utf8') as f:
         file_content = f.read()
