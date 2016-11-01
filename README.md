@@ -22,7 +22,7 @@ Now you can directly run the script
 this will train the neural network with the data given in data/ and output some statistics. 
 You can also test explicit names by adding them to the command
 
-   python learn-gender-by-names.py markus anika thorsten rebecca
+    python learn-gender-by-names.py markus anika thorsten rebecca
 
 In the output you will see the prediction for each name.
 
